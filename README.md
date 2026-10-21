@@ -1,15 +1,15 @@
-# Veronika Žigraiová — Personal Website
+# Veronika Žigraiová — personal website (Version 2)
 
-Static personal academic website ready for GitHub Pages.
+Ready for GitHub Pages.
 
-## Preview locally
-Open `index.html` in a browser.
+## Upload to GitHub
+Upload everything in this folder, including the `images` folder:
+- index.html
+- styles.css
+- script.js
+- images/
 
-## Publish on GitHub Pages
-1. Create a new GitHub repository (for example `veronikazigraiova.github.io`).
-2. Upload `index.html`, `styles.css`, and `script.js` to the repository root.
-3. In GitHub: Settings → Pages → Deploy from a branch → `main` / root.
-4. For a custom domain, add it under Settings → Pages → Custom domain and configure the DNS records with your domain registrar.
+If replacing an older version, replace the old `index.html`, `styles.css`, and `script.js`, then upload the whole `images` folder.
 
-## Before publishing
-Review publication statuses/titles, email, and any wording you want private or changed. Add your CV and professional profile links when ready.
+## Adding creative work later
+Put new images inside `images/`, then the Creative Work placeholders in `index.html` can be replaced with real project images and links.
