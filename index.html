@@ -219,49 +219,96 @@
     <p>Research becomes more useful when it leaves the paper.</p>
   </div>
 
-  <div class="experience-grid">
-    <div class="experience-card">
+  <div
+    class="experience-grid"
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+      width: 100%;
+      gap: 1px;
+    "
+  >
+    <div style="min-width: 0; padding: 24px; overflow: hidden;">
       <b>Bristol Robotics Laboratory</b>
       <span>Research visit · 2026</span>
+
       <p>
         Experimental HRI research involving mobile robotics
         and an upper-body exoskeleton.
       </p>
+
       <img
-        class="experience-photo"
         src="bristol-exoskeleton.png"
         alt="Veronika demonstrating an upper-body exoskeleton"
         loading="lazy"
+        style="
+          display: block;
+          width: 100%;
+          max-width: 280px;
+          height: auto;
+          aspect-ratio: 4 / 3;
+          object-fit: cover;
+          object-position: center;
+          margin: 24px auto 0;
+          border-radius: 3px;
+          flex: none;
+        "
       />
     </div>
 
-    <div class="experience-card">
+    <div style="min-width: 0; padding: 24px; overflow: hidden;">
       <b>Mixed Fleet Project</b>
       <span>Business Finland</span>
+
       <p>
         Industry-connected research on people and automation
         working together in logistics.
       </p>
+
       <img
-        class="experience-photo"
         src="mixed-fleet.jpg"
         alt="Veronika wearing safety equipment beside industrial machinery"
         loading="lazy"
+        style="
+          display: block;
+          width: 100%;
+          max-width: 280px;
+          height: auto;
+          aspect-ratio: 4 / 3;
+          object-fit: cover;
+          object-position: center 65%;
+          margin: 24px auto 0;
+          border-radius: 3px;
+          flex: none;
+        "
       />
     </div>
 
-    <div class="experience-card">
+    <div style="min-width: 0; padding: 24px; overflow: hidden;">
       <b>Robostudio</b>
       <span>Tampere University</span>
+
       <p>
         Robot demonstrations, research outreach and engagement
         with schools, companies and visitors.
       </p>
+
       <img
-        class="experience-photo"
         src="robostudio.png"
         alt="Veronika operating a yellow quadruped robot at Robostudio"
         loading="lazy"
+        style="
+          display: block;
+          width: 100%;
+          max-width: 280px;
+          height: auto;
+          aspect-ratio: 4 / 3;
+          object-fit: cover;
+          object-position: center;
+          margin: 24px auto 0;
+          border-radius: 3px;
+          flex: none;
+        "
       />
     </div>
   </div>
