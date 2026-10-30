@@ -115,3 +115,52 @@ button:focus-visible {
     max-width: 300px;
   }
 }
+
+/* Beyond the lab: three cards with matching images */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.experience-grid > .experience-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 30px;
+  background: var(--bg);
+}
+
+.experience-card > b {
+  min-height: 2.4em;
+}
+
+.experience-card > p {
+  flex: 1;
+  margin: 0 0 28px;
+  color: var(--muted);
+}
+
+.experience-card > .experience-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  flex: none;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+}
+
+@media (max-width: 760px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card > b {
+    min-height: 0;
+  }
+}
