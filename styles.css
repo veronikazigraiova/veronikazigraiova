@@ -280,3 +280,48 @@ button:focus-visible {
     padding: 24px;
   }
 }
+
+/* Name on the left, circular photo on the right */
+.hero .hero-name-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 360px);
+  align-items: center;
+  gap: 5vw;
+  width: 100%;
+  margin: 35px 0;
+}
+
+.hero .hero-name-row h1 {
+  min-width: 0;
+  margin: 0;
+  font-size: clamp(64px, 9vw, 150px);
+}
+
+.hero img.hero-circle {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  justify-self: end;
+  background: transparent;
+  border: none;
+}
+
+/* Stack neatly on smaller screens */
+@media (max-width: 1000px) {
+  .hero .hero-name-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 35px;
+  }
+
+  .hero .hero-name-row h1 {
+    font-size: clamp(58px, 17vw, 140px);
+  }
+
+  .hero img.hero-circle {
+    max-width: 280px;
+    justify-self: start;
+  }
+}
