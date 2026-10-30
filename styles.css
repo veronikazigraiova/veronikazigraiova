@@ -203,3 +203,80 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* Portfolio layout */
+#portfolio .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+#portfolio .portfolio-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  align-items: center;
+  gap: 24px;
+  min-width: 0;
+  padding: 32px;
+  background: var(--bg);
+}
+
+#portfolio .portfolio-copy {
+  min-width: 0;
+}
+
+#portfolio .portfolio-label,
+#portfolio .portfolio-copy small {
+  color: #9f5962;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+#portfolio .portfolio-copy h3 {
+  margin: 22px 0 18px;
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+#portfolio .portfolio-copy p {
+  color: var(--muted);
+}
+
+#portfolio .portfolio-copy small {
+  display: block;
+  margin-top: 24px;
+  line-height: 1.8;
+}
+
+#portfolio img.portfolio-picture {
+  display: block;
+  width: 180px;
+  max-width: 100%;
+  height: 135px;
+  margin: 0;
+  object-fit: contain;
+  object-position: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+}
+
+/* One card per row on smaller screens */
+@media (max-width: 1100px) {
+  #portfolio .portfolio-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Small pictures below the text on phones */
+@media (max-width: 540px) {
+  #portfolio .portfolio-item {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 24px;
+  }
+}
