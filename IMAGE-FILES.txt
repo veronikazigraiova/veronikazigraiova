@@ -1,0 +1,21 @@
+Upload these new image files beside index.html, using these exact names (including capitalisation):
+
+exorobo-setup.png
+game-soldier.png
+game-child.png
+game-doctor.png
+game-priest.png
+Corporate.png
+chimera.png
+not-bee.png
+witch-woods.png
+home-galery.jpg
+night-trees.jpg
+oddity-1.jpg
+oddity-2.jpg
+oddity-3.jpg
+presenting.png
+
+The existing images are included in this package. New images are referenced directly and are not placeholder files. They will appear once you upload them to the same repository folder.
+
+Corporate.png is the filename used for the Fever Dream / office illustration. home-galery.jpg retains your supplied spelling.
