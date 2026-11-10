@@ -10,3 +10,7 @@
 #site-chimera-dismiss{position:absolute;right:0;top:0;width:29px;height:29px;border:1px solid #8b7d88;border-radius:50%;background:#231c26;color:white;font:19px/1 sans-serif;cursor:pointer;pointer-events:auto}
 #site-chimera-return{position:fixed;bottom:14px;right:14px;z-index:9998;padding:9px 12px;border:1px solid #756571;border-radius:8px;background:#29222c;color:#f2e9e5;font:13px Georgia,serif;cursor:pointer}
 @media(prefers-reduced-motion:reduce){#site-chimera-creature{animation:none}#site-chimera{transition:none}}
+
+#site-chimera-creature img {
+    filter: brightness(0) invert(1) !important;
+}
