@@ -1,4 +1,4 @@
-/* The wandering chimera: change the dialogue lists to give it new things to say. */
+
 (()=>{
   if(document.getElementById('site-chimera'))return;
   const lines=[
@@ -52,7 +52,7 @@
   const wrap=document.createElement('div');wrap.id='site-chimera';
   const speech=document.createElement('div');speech.id='site-chimera-speech';speech.setAttribute('role','status');speech.setAttribute('aria-live','polite');speech.hidden=true;
   const creature=document.createElement('button');creature.type='button';creature.id='site-chimera-creature';creature.setAttribute('aria-label','Talk to the floating chimera');
-  const pic=document.createElement('img');pic.src=new URL('assets/chimera.png',document.currentScript?.src||document.baseURI).href;pic.alt='';creature.append(pic);
+  const pic=document.createElement('img');pic.src=new URL('chimera.png',document.currentScript?.src||document.baseURI).href;pic.alt='';creature.append(pic);
   const dismiss=document.createElement('button');dismiss.type='button';dismiss.id='site-chimera-dismiss';dismiss.setAttribute('aria-label','Hide the chimera');dismiss.textContent='×';
   const summon=document.createElement('button');summon.type='button';summon.id='site-chimera-return';summon.textContent='Summon the chimera';summon.hidden=true;
   wrap.append(speech,creature,dismiss);document.body.append(wrap,summon);
